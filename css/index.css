@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+body{
+    background-color: whitesmoke;
+    display: flex;
+}
+/*estilizando o menu lateral*/
+.menu{
+    height: 95vh;
+    background-color:#1D232A;
+    display: flex;
+    width: 270px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 49px;
+}
+.titulo{
+    color: white;
+    margin-top: 15px;
+    border-bottom: 1px solid whitesmoke;
+    box-shadow: 0px 1.5px 0px lightslategray;
+    margin-bottom: 35px;
+}
+/*estilizando o div dos itens*/
+.item{
+    display: flex;
+    align-items: center;
+    width: 260px;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 8px;
+    justify-content: space-around;
+    color: #95999C;
+}
+.item:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.nome-item{
+    width: 180px;
+    text-align: center;
+}
+.logo-img{
+    margin-bottom: 25px;
+}
+.sair-nome{
+    width: 50px;
+}
+.sair{
+    width: 90px;
+    margin-top: 260px;
+    bottom: 0px;
+    border-radius: 6px;
+}
+.sair:hover{
+    transition: 0.5s;
+    font-weight: bold;
+}
+/*estilizando o cadastro de acessos*/
+.form-cad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    border: 1px solid black;
+    padding: 40px;
+    background-color: whitesmoke;
+    width:70%;
+    margin-left: 120px;
+}
+.cadastro{
+    width: 78%;
+    height: 100vh;
+}
+.inputs{
+    width: 500px;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border: 2px solid lightslategray;
+}
+.inputs:hover{
+    box-shadow: 1px 1px 3px lightskyblue;
+    border: 2px solid lightslategray;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.label-acesso{
+    position: relative;
+    left: -195px;
+    font-weight: bold;
+}
+#tipo{
+    width: 512px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border: 2px solid lightslategray;
+}
+#submit{
+    width: 200px;
+    height: 35px;
+    background-color: rgb(63, 63, 173);
+    border: 1px solid rgb(107, 103, 103);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#submit:hover{
+    transition: 0.3s;
+    background-color: rgb(49, 49, 143);
+    box-shadow: 1px 1px 3px rgb(36, 35, 35);
+}
+.tit-form{
+    text-shadow: 1px 1px 2px rgb(60, 62, 63);
+}
+/*criando uma classe invisel para esconder as funcionaliades*/
+.invisivel{
+    display: none;
+}
+.fadeOut{
+    display: none;
+}
+.botao-sair{
+    border: 0;
+    background-color: whitesmoke;
+    cursor: pointer;
+    justify-self: flex-end;
+}
+.botao-sair:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+/*estilo do cadastro de oficio*/
+.cadastrar-oficio{
+    background-color: whitesmoke;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 325px;
+    margin-top: 7%;
+    margin-bottom: 10px;
+    margin-left: 160px;
+    padding: 40px;
+    border: 1px solid black;
+}
+.form-oficio{
+    display: flex;
+    flex-direction: column;
+}
+#sair-oficio{
+    top: 120px;
+    right: 200px;
+}
+#submit-oficio{
+    width: 200px;
+    height: 35px;
+    background-color: rgb(63, 63, 173);
+    border: 1px solid rgb(107, 103, 103);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    left: 30%;
+}
+#submit-oficio:hover{
+    transition: 0.3s;
+    background-color: rgb(49, 49, 143);
+    box-shadow: 1px 1px 3px rgb(36, 35, 35);
+}
+/*div oficio invisivel*/
+.invisivel-2{
+    display: none;
+}
+/*criando uma classe para quando for clicado no menu mudar*/
+.menu-ativo{
+    border-right: 8px solid #FFFFFF;
+}
+/*customizando o botao de menu da página*/
+.botao-menu{
+    background: 0;
+    border: 0;
+    position: absolute;
+    height: 50px;
+    left: 0;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #1D232A;
+    width: 270px;
+    padding-right: 215px;
+}
+.sumir{
+    left: -100vw;
+}
+.ficarBranco{ 
+    background-color: whitesmoke;
+}
