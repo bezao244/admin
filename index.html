@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/pesquisa.css">
 </head>
 <body>
         <button class="botao-menu"><img src="img/menu.png" width="35px"></button>
@@ -19,7 +20,7 @@
                 <img src="img/add-user.png" width="35px">
                 <p class="nome-item">Cadastrar Acessos</p>
             </div>
-            <div class="item">
+            <div class="item" id="gerenciar-acessos">
                 <img src="img/pesquisa.png" width="35px">
                 <p class="nome-item">Gerenciar Acessos</p>
             </div>
@@ -77,8 +78,58 @@
             <input type="submit" value="Cadastrar" id="submit-oficio">
         </form>
     </div>
+    <div class="pesquisa invisivel4">
+        <button class="botao-sair saindo-x" id="sair-oficio">
+            <img src="img/x.jpeg">
+        </button>
+        <h2>Pesquisar acessos ou candidatos</h2>
+        Pesquise <input type="text" class="pesquisa-item inputs">
+        <br>
+        <div class="filtro-lista">
+            <div class="filtro">
+                <p class="aviso">Apenas um de cada vez</p>
+                <h3 class="filtro-titulo">Filtrar</h3>
+                <p>Avaliador<input type="checkbox" class="avali-filtro check" value="Avaliador"></p>
+                <p>Terçeirizada<input type="checkbox" class="tercei-filtro check" value="Terçeirizada"></p>
+                <p>Siderúrgica<input type="checkbox" class="side-filtro check" value="Siderúrgica"></p>
+                <p>Candidato<input type="checkbox" class="candi-filtro check" value="Candidato"></p>
+                <input type="submit" value="Filtrar" id="filtrar">
+            </div>
+            <table class="tabela-filtro">
+                <tr class="cabecalho">
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                </tr>
+                <tr class="linha-filtro">
+                    <td class="nome-filtro">Bernardo Afonso Nascimento Silva</td>
+                    <td class="cargo">Administrador</td>
+                    <td> <input type="button" value="Detalhes" id="detalhes"></td>
+                </tr>
+                <tr class="linha-filtro par">
+                    <td class="nome-filtro">Caio Afonso Nascimento Silva</td>
+                    <td class="cargo">Avaliador</td>
+                    <td> <input type="button" value="Detalhes" id="detalhes"></td>
+                </tr>
+                <tr class="linha-filtro">
+                    <td class="nome-filtro">Pedro Afonso Nascimento Silva</td>
+                    <td class="cargo">Terçeirizada</td>
+                    <td> <input type="button" value="Detalhes" id="detalhes"></td>
+                </tr>
+                <tr class="linha-filtro par">
+                    <td class="nome-filtro">Arthur Afonso Nascimento Silva</td>
+                    <td class="cargo">Candidato</td>
+                    <td> <input type="button" value="Detalhes" id="detalhes"></td>
+                </tr>
+                <tr class="linha-filtro">
+                    <td class="nome-filtro">Samuel Afonso Nascimento Silva</td>
+                    <td class="cargo">Siderúrgica</td>
+                    <td> <input type="button" value="Detalhes" id="detalhes"></td>
+                </tr>
+            </table>
+        </div>
     </div>
     <script src="js/index.js"></script>
     <script src="js/menuToggle.js"></script>
+    <script src="js/filtrar.js"></script>
 </body>
 </html>
