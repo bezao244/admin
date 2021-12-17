@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/pesquisa.css">
+    <link rel="stylesheet" href="css/config.css">
 </head>
 <body>
         <button class="botao-menu"><img src="img/menu.png" width="35px"></button>
@@ -32,9 +33,17 @@
                 <img src="img/pranchetanova.png" width="35px">
                 <p class="nome-item">Cadastrar Ofícios</p>
             </div>
-            <div class="item sair">
-                <img src="img/sair.png" width="35px">
-                <p class="nome-item sair-nome">Sair</p>
+            <div class="config sumir-config">
+                <button class="botao-config">
+                    <img src="img/close.png" class="sair-config" width="35px">
+                </button>
+                <p class="funcoes">Perfil</p>
+                <p class="funcoes">Sair</p>
+                <p class="funcoes-admin">Administrador</p>
+            </div>
+            <div class="item sair" id="config">
+                <img src="img/configuracao.png" width="35px">
+                <p class="nome-item sair-nome">Configuraçoês</p>
             </div>
         </div>
     
@@ -131,5 +140,6 @@
     <script src="js/index.js"></script>
     <script src="js/menuToggle.js"></script>
     <script src="js/filtrar.js"></script>
+    <script src="js/config.js"></script>
 </body>
 </html>
