@@ -15,6 +15,8 @@ if(largura< 1340){
 //fechando as outras funcionalidades abertas
 var pegCadastroOficio = document.querySelector(".cadastrar-oficio");
 pegCadastroOficio.classList.add("invisivel-2");
+var pegDivPesquisa = document.querySelector(".pesquisa");
+pegDivPesquisa.classList.add("invisivel4");
 
 //adicionando o a classe do menu ativo para a borda da div mudar
 var item = pegCadastro;
@@ -49,9 +51,10 @@ if(largura< 1340){
 }
 
 //fechando as outras funcionalidades abertas
-//comecando pela de cadastro de acessos
 var pegDivCadastro = document.querySelector(".cadastro");
 pegDivCadastro.classList.add("invisivel");
+var pegDivPesquisa = document.querySelector(".pesquisa");
+pegDivPesquisa.classList.add("invisivel4");
 
 //pegando a div de cadastro
 var pegCadastroOficio = document.querySelector(".cadastrar-oficio");
