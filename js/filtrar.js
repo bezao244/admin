@@ -7,6 +7,13 @@ botaoGerenciar.addEventListener("click", function(event){
     //adicionando o a classe do menu ativo para a borda da div mudar
     var item = botaoGerenciar;
     item.classList.toggle('menu-ativo');
+    
+    //fechando as outras páginas
+    var pegCadastroOficio = document.querySelector(".cadastrar-oficio");
+    pegCadastroOficio.classList.add("invisivel-2");
+    var pegDivCadastro = document.querySelector(".cadastro");
+    pegDivCadastro.classList.add("invisivel");
+
     //fechando a pagina pelo x
     var pegBotaoSair = document.querySelector(".saindo-x");
     pegBotaoSair.addEventListener("click", function(event){
